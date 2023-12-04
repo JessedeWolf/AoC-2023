@@ -18,6 +18,8 @@ def partA():
         return e
 
     sa = [d(a) for a in sa]
+    for x in sa:
+        print(x)
 
 
     def sp(a, b, sa):
@@ -75,9 +77,9 @@ def partB():
                             n.append(int(sa[x][y]))
 
                 if len(set(n)) == 2:
-                    print(n)
                     result = n[0] * n[-1]
                     partB += result
 
     print(partB)
+partA()
 partB()
